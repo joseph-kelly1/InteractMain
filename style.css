@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+
+body {
+    width: 100%;
+    height: 100%;
+    background: #333;
+}
+
+
+/* Navigation Bar */
+
+nav{
+    width: 100%;
+    background: #333;
+    padding: 5px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 6vh;
+    display: flex;
+    justify-content: space-between;
+    z-index: 5;
+  }
+
+  /* Dropdown */
+
+  .nav div {
+    height: 4px;
+    background-color: white;
+    margin:5px 0;
+    border-radius: 100px;
+    transition: 0.3s;
+  }
+
+  .nav {
+    width: 30px;
+    display: block;
+  }
+  .nav1 {
+    width: 30px;
+  }
+  .nav2 {
+    width: 20px;
+  }
+  .nav3 {
+    width: 25px;
+  }
+
+  .emptybutton {
+    position: fixed;
+    width: 40px;
+    height: 6vh;
+    background: transparent;
+    border: 0px;
+    z-index: 6;
+  }
+
+  body:has(.emptybutton:hover) .nav div {
+    width: 30px;
+  }
+  body:has(.dropdown.active) .nav div {
+    width: 30px;
+  }
+  
+
+  .dropdown {
+    position: relative;
+  }
+
+  .dropdown-menu {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    z-index: 4;
+    left: 0;
+    top: 0;
+    background: #333;
+    padding: 7vh .75rem .75rem .75rem;
+    border-radius: 0 0 5px 0;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+  }
+
+  .dropdown.active > .dropdown-menu {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  .dropdown-link {
+    color: #ECB466;
+    text-decoration: none;
+    padding: .25rem;
+    font-size: 1.2rem;
+  }
+
+  .dropdown-link:hover {
+    color: #ff9500;
+  }
+
+
+  /* Hero section 1*/
+
+  .hero1 {
+    width: 100%;
+    height: 95vh;
+    background: url(images/ProjectMeeting.jpg)no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .heroinfo {
+    display: flex;
+    width: 100%;
+    height: 95vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .heroinfo h1 {
+    color: #ECB466;
+    font-size: 400%;
+    font-weight: 700;
+  }
+
+  .link {
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 15px 10px;
+    transition: 100ms ease-in-out;
+  }
+
+  .link:hover {
+    background-color: #444;
+  }
+
+
+  /* Main - grid contianer section */
+
+  .grid-container {
+    display: grid;
+    max-width: 100%; 
+    height: max-content;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    justify-content: center;
+    margin: 80px;
+    align-items: center;
+  }
+
+   /* Hero section 2*/
+
+   .hero2 {
+    width: 100%;
+    height: 95vh;
+    background: url(images/DUC.jpg)no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  /* foot */
+
+  .form{
+    width: 100%;
+    height: 80vh;
+    background: #333;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    color:white;
+  }
+  
+  form{
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+  }
+  
+  form h3{
+    color: #FFF;
+    font-weight: 800;
+    margin-bottom: 20px;
+  }
+  
+  form input, form textarea{
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    background: #444;
+    color: #fff;
+    resize: none;
+  }
+  
+  form button{
+    padding: 15px;
+    background: #444;
+    color: #fff;
+    font-size: 16px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    transition: 100ms ease-in;
+  }
+  
+  form button:hover{
+    transition: 100ms ease-in;
+    background: #555;
+  }
+  
+  .icons {
+    width: 100%;
+    height: 20vh;
+    background: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color:white;
+  }
+  
+  ion-icon{
+    font-size: 64px;
+    color: #fff;
+  }
+
+  .icons .ig:hover {
+    transform: translateY(-10px);
+    transition: transform 150ms ease-in-out;
+  }
+  .icons .fb:hover {
+    transform: translateY(-10px);
+    transition: transform 150ms ease-in-out;
+  }
+  .icons .twitter:hover {
+    transform: translateY(-10px);
+    transition: transform 150ms ease-in-out;
+  }
+  .icons .tiktok:hover {
+    transform: translateY(-10px);
+    transition: transform 150ms ease-in-out;
+  }
