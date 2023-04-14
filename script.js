@@ -2,6 +2,8 @@ document.addEventListener('click', e => {
     const isDropdownButton = e.target.matches("[data-dropdown-button]")
     if (!isDropdownButton && e.target.closest('[data-dropdown]') != null) return
 
+    let dropdown = document.querySelector(".dropdown");
+
     let currentDropdown
     if (isDropdownButton) {
         currentDropdown = e.target.closest('[data-dropdown]')
@@ -15,8 +17,7 @@ document.addEventListener('click', e => {
     })
 
     document.addEventListener('scroll', e => {
-        if (isDropdownButton)
-            return dropdown.classList.remove('active')
+        return dropdown.classList.remove('active')
     })
 
 })

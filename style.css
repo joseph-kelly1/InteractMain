@@ -141,24 +141,38 @@ nav{
     text-decoration: none;
     font-weight: 500;
     padding: 15px 10px;
-    transition: 100ms ease-in-out;
+    border-radius: 2px;
   }
 
   .link:hover {
     background-color: #444;
   }
 
+  @media screen and (max-width: 650px) {
+    .heroinfo h1 {
+      font-size: 250%;
+      margin-bottom: 20px;
+    }
+  }
+
+  @media screen and (max-width: 650px) {
+    .link {
+      font-size: 80%;
+    }
+  }
 
   /* Main - grid contianer section */
 
+
+
   .grid-container {
     display: grid;
-    max-width: 100%; 
-    height: max-content;
+    width: 100%;
+    height: 50vh;
+    background: #555;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 20px;
     justify-content: center;
-    margin: 80px;
     align-items: center;
   }
 
@@ -242,19 +256,32 @@ nav{
     color: #fff;
   }
 
+  .icons .ig {
+    transition: transform 150ms ease-in-out;
+  }
   .icons .ig:hover {
     transform: translateY(-10px);
+  }
+
+  .icons .fb {
     transition: transform 150ms ease-in-out;
   }
   .icons .fb:hover {
     transform: translateY(-10px);
+  }
+
+  .icons .twitter {
     transition: transform 150ms ease-in-out;
   }
   .icons .twitter:hover {
     transform: translateY(-10px);
+  }
+
+  .icons .tiktok {
     transition: transform 150ms ease-in-out;
   }
   .icons .tiktok:hover {
     transform: translateY(-10px);
-    transition: transform 150ms ease-in-out;
+
   }
+
