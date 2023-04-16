@@ -118,6 +118,7 @@ nav{
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+
   }
 
   .heroinfo {
@@ -148,33 +149,98 @@ nav{
     background-color: #444;
   }
 
-  @media screen and (max-width: 650px) {
+  @media screen and (max-width: 655px) {
     .heroinfo h1 {
       font-size: 250%;
       margin-bottom: 20px;
     }
   }
 
-  @media screen and (max-width: 650px) {
+  @media screen and (max-width: 655px) {
     .link {
       font-size: 80%;
     }
   }
 
-  /* Main - grid contianer section */
+  /* Main - wayland interact info */
 
-
-
-  .grid-container {
-    display: grid;
+  main {
+    color: white;
+    background: #333;
     width: 100%;
-    height: 50vh;
-    background: #555;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
+    height: fit-content;
   }
+  
+  .our-info {
+    text-align: center;
+  }
+  
+  .first h1 {
+    font-size: 300%;
+    padding: 5rem 0;
+  }
+  @media screen and (max-width: 655px) {
+    .first h1 {
+      font-size: 200%;
+    }
+  }
+
+  
+  .orange {
+    color: #ECB466
+  }
+  
+  .first p {
+    font-size: 125%;
+    padding: 0 22% 5rem 22%;
+  }
+  @media screen and (max-width: 655px) {
+    .first p {
+      padding: 0 1rem 5rem 1rem;
+      
+    }
+  }
+  
+  .spacer {
+    aspect-ratio: 960/300;
+    width: 100%;
+    background: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .wave-divider-up {
+    background-image: url(svg/wave-divider-up.svg);
+  }
+  
+  .third {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .icon-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10rem;
+    justify-content: center;
+    background: #ECB466;
+    padding: 0 11rem 0 11rem;
+  }
+  @media screen and (max-width: 655px) {
+    .icon-container {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  }
+  
+  .icon-description {
+    font-size: 125%;
+  }
+
+  .wave-divider-down {
+    background-image: url(svg//wave-divider-down.svg);
+    margin-bottom: 5rem;
+  }
+
 
    /* Hero section 2*/
 
@@ -189,10 +255,16 @@ nav{
 
   /* foot */
 
+  .foot {
+    background: url(/svg/foot-background.svg) no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
   .form{
     width: 100%;
     height: 80vh;
-    background: #333;
+    /* background: #333; */
     display: flex;
     align-items: end;
     justify-content: center;
@@ -203,7 +275,7 @@ nav{
     background: transparent;
     display: flex;
     flex-direction: column;
-    padding: 2vw 4vw;
+    padding: 2% 4%;
     width: 90%;
     max-width: 600px;
     border-radius: 10px;
@@ -241,10 +313,9 @@ nav{
     background: #555;
   }
   
-  .icons {
+  .foot-icons {
     width: 100%;
     height: 20vh;
-    background: #333;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -256,31 +327,41 @@ nav{
     color: #fff;
   }
 
-  .icons .ig {
+  .info-icon {
+    font-size: 80px;
+  }
+
+  @media screen and (max-width: 655px) {
+    .info-icon {
+      font-size: 128px;
+    }
+  }
+
+  .foot-icons .ig {
     transition: transform 150ms ease-in-out;
   }
-  .icons .ig:hover {
+  .foot-icons .ig:hover {
     transform: translateY(-10px);
   }
 
-  .icons .fb {
+  .foot-icons .fb {
     transition: transform 150ms ease-in-out;
   }
-  .icons .fb:hover {
+  .foot-icons .fb:hover {
     transform: translateY(-10px);
   }
 
-  .icons .twitter {
+  .foot-icons .twitter {
     transition: transform 150ms ease-in-out;
   }
-  .icons .twitter:hover {
+  .foot-icons .twitter:hover {
     transform: translateY(-10px);
   }
 
-  .icons .tiktok {
+  .foot-icons .tiktok {
     transition: transform 150ms ease-in-out;
   }
-  .icons .tiktok:hover {
+  .foot-icons .tiktok:hover {
     transform: translateY(-10px);
 
   }
