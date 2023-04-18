@@ -24,7 +24,7 @@ nav{
     position: fixed;
     top: 0px;
     left: 0px;
-    height: 6vh;
+    height: 8vh;
     display: flex;
     justify-content: space-between;
     z-index: 5;
@@ -35,11 +35,11 @@ nav{
   .nav div {
     height: 4px;
     background-color: white;
-    margin:5px 0;
+    margin: 8px 0;
     border-radius: 100px;
     transition: 0.3s;
     transform: translateX(0px);
-    transition: transform 150ms ease-in-out;
+    transition: transform 150ms ease-in-out, 150ms ease-in-out;
   }
 
   .nav {
@@ -82,12 +82,12 @@ nav{
     display: flex;
     flex-direction: column;
     z-index: 4;
-    left: 0;
+    left: 2px;
     top: 0;
     background: #333;
-    /* background: rgba(0,0,0,0.5); */
-    padding: 7vh .75rem .75rem .75rem;
-    border-radius: 0 0 5px 0;
+    width: 12rem;
+    padding: 8vh .75rem .75rem .75rem;
+    border-radius: 0 0 7px 7px;
     opacity: 0;
     pointer-events: none;
     transform: translateY(-10px);
@@ -99,7 +99,7 @@ nav{
     position: fixed;
     left: 0;
     top: 0;
-    font-size: 48px;
+    font-size: 56px;
     z-index: 5;
     pointer-events: none;
     transform: translateY(-10px);
@@ -135,7 +135,7 @@ nav{
     color: #ECB466;
     text-decoration: none;
     padding: .25rem;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
   @media screen and (max-width: 1000px) {
     .dropdown-link {
@@ -207,32 +207,32 @@ nav{
     background: #ECB466;
     width: 100%;
     height: fit-content;
+    
   }
   
   .our-info {
     text-align: center;
   }
   
+
+  .first {
+    background: #333;
+  }
   .first h1 {
     font-size: 300%;
     padding: 5rem 0;
-    background: #333;
   }
   @media screen and (max-width: 1000px) {
     .first h1 {
       font-size: 200%;
     }
   }
-
-  
   .orange {
     color: #ECB466
   }
-  
   .first p {
     font-size: 125%;
     padding: 0 22% 5rem 22%;
-    background: #333;
   }
   @media screen and (max-width: 1000px) {
     .first p {
@@ -303,9 +303,10 @@ nav{
   /* foot */
 
   .foot {
-    background: url(/svg/foot-background.svg) no-repeat;
-    background-position: center;
+    background: url(/svg/stacked-waves.svg) no-repeat;
+    background-position: top;
     background-size: cover;
+    
   }
 
   .form{
